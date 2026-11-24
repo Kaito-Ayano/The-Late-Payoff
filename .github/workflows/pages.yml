@@ -1,0 +1,50 @@
+name: Deploy The Late Payoff
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Fetch the frozen single-file site
+        env:
+          SITE_ARTIFACT: https://aka.doubaocdn.com/s/6jdVhrgASZ
+        run: |
+          mkdir -p public
+          curl -fL --retry 3 --retry-delay 2 "$SITE_ARTIFACT" -o public/index.html
+          test -s public/index.html
+          touch public/.nojekyll
+          printf 'site bytes: %s\n' "$(wc -c < public/index.html)"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
