@@ -1,6 +1,6 @@
 # The Late Payoff
 
-A separate project page for an English data-story on digital-intelligent investment and financial performance in China's listed logistics firms, 2016–2024.
+A separate project page for an English data-story on digital-intelligent investment and financial performance in China's listed logistics firms, 2016–2025.
 
 **Standalone project page:** https://kaito-ayano.github.io/The-Late-Payoff/
 
@@ -13,22 +13,27 @@ The public artifact is a single self-contained HTML file: 1280×720 stage, font 
 
 ## What the page says
 
-- 32 firms: 27 A-share and 5 HK; 229 A-share firm-years, 2016–2024.
-- HK is a separate strip; 2025 is an empty column, not a zero.
-- Ten tests, seven accounts. The payoff is late, not absent.
+- 32 firms: 27 A-share and 5 HK; 309 firm-years in the 32×10 frame; 229 A-share firm-years with a constructible DICI; 7 MADI observations.
+- HK is a separate strip (2017–2025; six calendar gaps; 2016 has no HK row); 2025 has rows but no DICI/AIRI, not zero.
+- Ten claims, seven accounts. The payoff is late, not absent.
+- H5 is the exploratory service-value path DICI → AIRI_S → service outcomes → ROA. H6 is MADI × DICI (N=7, not testable). H6b is AIRI_G × DICI.
 - No causal claim. Replication is partial, not full.
 
 ## Provenance and limits
 
-- Values were read from a frozen claims snapshot (`TLP-DATA-v1`) at build time and embedded in `index.html`; the page performs no runtime `fetch`, and this repository ships no separate `claims.json`.
+- Values are embedded from the v4 public package's result JSONs; the page performs no runtime `fetch`, and this repository ships no separate `claims.json`. The source paths are named in each Evidence row.
+- H2: thesis §3.5 reports +0.211 pre-extension and +0.0009 for a 32-firm extension; the released-panel recomputation is +0.0841. These are different AIRI scales and must not be merged.
+- H6b: the thesis/Python point is +4.9894; the package's stage3 JSON is +4.9785. The page displays +4.9894 and retains +4.9785 as a cross-check. The package README's Table 3 label needs correction.
+- H7: γ .1464 (thesis), .0993 (released panel) and .1119 (Python grid) belong to different AIRI scales; attenuation percentages are not comparable across them.
+- MADI coding sheets are an illustrative 0/1/2 reconstruction, not original keystroke-level coding.
 - Firm names are anonymised; the public artifact carries no author name.
 - The page is a public-facing research narrative, not the thesis document or a full replication package.
 
 ## Build status
 
-The local build was audited at 1280×720: 13/13 routes, 0 JS errors, no canvas overflow, and no author name in the HTML.
+The build was audited at 1280×720: 13/13 routes, 0 JS errors, no canvas overflow, and no author name in the HTML.
 
-Interaction audit (25 November 2026): the evidence-index drawer now carries per-question READING and Source lines for all eight questions; every claims-ledger row (H1a–H9) opens a drawer filled from its own data attributes, with H6b keeping its dedicated p-ladder drawer; the H5 ledger label was aligned with the thesis hypothesis (service-value path, not MADI → ROA); `.led-row` received a pointer cursor.
+Interaction audit (25 November 2026): all eight Evidence Index questions open their drawer; all 10 Claims Ledger rows, 9 Conventions terms, 7 Replication routes and 7 Explore segments open a source drawer. `H6b` carries the six-p ladder in that drawer.
 
 ## Deployment
 
