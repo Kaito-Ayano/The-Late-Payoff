@@ -2,7 +2,7 @@
 
 A separate project page for an English data-story on digital-intelligent investment and financial performance in China's listed logistics firms, 2016–2024.
 
-**Live page:** https://kaito-ayano.github.io/The-Late-Payoff/
+**Live page:** https://kaito-ayano.github.io/the-late-payoff/
 
 The page has two modes:
 
@@ -30,4 +30,5 @@ The local build was audited at 1280×720: 13/13 routes, 0 JS errors, no canvas o
 
 ## Deployment
 
-GitHub Pages is deployed from the workflow in `.github/workflows/pages.yml`.
+The live page is a separate URL on the existing GitHub Pages site: `https://kaito-ayano.github.io/the-late-payoff/`.
+This repository is the public project record and source note; it does not ship the thesis document or the replication package.
