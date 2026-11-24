@@ -32,11 +32,11 @@ The public artifact is a single self-contained HTML file: 1280×720 stage, font 
 
 ## Build status
 
-The v4.2 page was audited at 1280×720 on 25 November 2026: 13/13 routes, 0 JS errors, 0 console errors, no canvas overflow. The deployed file is byte-identical to local SHA-256 `1e5beca6443953317c291e292bfe6a855faa4acd64e48437b517e83345349982` (2,628,784 bytes) at commit `3e72b6f`.
+The v4.3 page was audited at 1280×720 on 25 November 2026: 13/13 routes, 0 JS errors, 0 console errors, no canvas overflow. The deployed file is byte-identical to local SHA-256 `4dfa2739d470903edd66982abf572215a509e68159e0664d8cc5892ee01f0cfa` (2,628,886 bytes) at commit `df13729`.
 
 Interaction audit: 41/41 declared Evidence rows open with non-empty content — Q1–Q8 (8), Claims Ledger H1a–H9 plus H6b (10), Conventions (9), Replication (7), Explore (7). Each Q1–Q8 has its own READING and Source line; H6b keeps its dedicated six-value p-ladder drawer. No page has duplicate answers. Q1–Q8 `data-r`/`data-src`, the ten Ledger row `data-r`, and the original H6b drawer are preserved from commit `3fbc100`.
 
-v4.2 corrections: Story 06 H8 denominator corrected from 27 to 32 firms; Controls drawer CFO denominator corrected to net operating cash flow / total assets; H6b stage3 +4.9785 labelled as a cross-check rather than "legacy must not be used"; Q/ledger active state follows the clicked row; inline favicon removes the `/favicon.ico` 404.
+v4.2–v4.3 corrections: Story 06 H8 denominator corrected from 27 to 32 firms; the H2 drawer no longer applies the 234× factor to +.0841 (that factor belongs to the thesis 32-firm extension +.0009); Controls drawer CFO denominator corrected to net operating cash flow / total assets; H6b stage3 +4.9785 labelled as a cross-check rather than "legacy must not be used"; Q/ledger active state follows the clicked row; inline favicon removes the `/favicon.ico` 404.
 
 ## Deployment
 
