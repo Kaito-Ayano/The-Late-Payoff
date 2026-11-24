@@ -20,14 +20,10 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - name: Fetch the audited single-file story
+      - name: Prepare Pages artifact
         run: |
           mkdir -p _site
-          curl -fsSL "https://raw.githubusercontent.com/Kaito-Ayano/Kaito-Ayano.github.io/main/the-late-payoff/index.html" -o _site/index.html
+          cp index.html _site/index.html
           test -s _site/index.html
           touch _site/.nojekyll
           printf 'index.html bytes: '

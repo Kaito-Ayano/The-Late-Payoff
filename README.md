@@ -9,7 +9,7 @@ The page has two modes:
 - **Story** — the narrative argument, from the panel to the ledger.
 - **Evidence** — the auditable claim ledger, conventions, replication route and firm map.
 
-The public artifact is a single self-contained HTML file: 1280×720 stage, font files embedded, no runtime `fetch`, no external assets.
+The public artifact is a single self-contained HTML file: 1280×720 stage, font files embedded, no runtime `fetch`, no external assets. It is committed as `index.html` in this repository.
 
 ## What the page says
 
@@ -34,4 +34,4 @@ The page is served from this repository's own GitHub Pages endpoint, not from a 
 
 `https://kaito-ayano.github.io/The-Late-Payoff/`
 
-The workflow fetches the already-audited single-file artifact, checks that the file is non-empty, and publishes it as the Pages artifact. The repository remains the public project record and source note; it does not ship the thesis document or the replication package.
+The workflow publishes the committed `index.html` as the Pages artifact. The repository remains the public project record and source note; it does not ship the thesis document or the replication package.
