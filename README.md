@@ -33,7 +33,7 @@ The public artifact is a single self-contained HTML file: 1280×720 stage, font 
 
 The build was audited at 1280×720: 13/13 routes, 0 JS errors, no canvas overflow, and no author name in the HTML.
 
-Interaction audit (25 November 2026): all eight Evidence Index questions open their drawer; all 10 Claims Ledger rows, 9 Conventions terms, 7 Replication routes and 7 Explore segments open a source drawer. `H6b` carries the six-p ladder in that drawer.
+Interaction audit (25 November 2026): Q1–Q8 each open with their own READING and Source lines; all 10 Claims Ledger rows (H1a–H9 plus H6b) open a drawer, with H6b keeping its dedicated six-value p-ladder drawer; all 9 Conventions terms, 7 Replication routes and 7 Explore segments open a source drawer. The H5 ledger label is aligned with the thesis hypothesis (service-value path, not MADI → ROA). The combined target count is 41, all exercised at 1280×720.
 
 ## Deployment
 
