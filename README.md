@@ -14,9 +14,10 @@ The public artifact is a single self-contained HTML file: 1280×720 stage, font 
 ## What the page says
 
 - 32 firms: 27 A-share and 5 HK; 309 firm-years in the 32×10 frame; 229 A-share firm-years with a constructible DICI; 7 MADI observations.
-- HK is a separate strip (2017–2025; six calendar gaps; 2016 has no HK row); 2025 has rows but no DICI/AIRI, not zero.
+- HK is a separate strip: 39 firm-years over 2016–2024 (JD, J&amp;T and ANE enter in 2018 — six gaps; no HK row in 2025); no DICI is released for any HK firm.
 - Ten claim rows, seven accounts. The payoff is late, not absent.
 - H5 is the exploratory service-value path DICI → AIRI_S → service outcomes → ROA. H6 is MADI × DICI (N=7, not testable). H6b is AIRI_G × DICI.
+- Five robustness checks were pre-registered (winsorisation, DV replacement, excluding 2016, subsamples, stock-vs-flow DICI); their coefficients sit in the estimation logs and are not reprinted on the page.
 - No causal claim. Replication is partial, not full.
 
 ## Provenance and limits
