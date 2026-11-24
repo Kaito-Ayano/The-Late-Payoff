@@ -20,13 +20,15 @@ The public artifact is a single self-contained HTML file: 1280×720 stage, font 
 
 ## Provenance and limits
 
-- Values are read from the frozen `claims.json` under `TLP-DATA-v1`.
+- Values were read from a frozen claims snapshot (`TLP-DATA-v1`) at build time and embedded in `index.html`; the page performs no runtime `fetch`, and this repository ships no separate `claims.json`.
 - Firm names are anonymised; the public artifact carries no author name.
 - The page is a public-facing research narrative, not the thesis document or a full replication package.
 
 ## Build status
 
 The local build was audited at 1280×720: 13/13 routes, 0 JS errors, no canvas overflow, and no author name in the HTML.
+
+Interaction audit (25 November 2026): the evidence-index drawer now carries per-question READING and Source lines for all eight questions; every claims-ledger row (H1a–H9) opens a drawer filled from its own data attributes, with H6b keeping its dedicated p-ladder drawer; the H5 ledger label was aligned with the thesis hypothesis (service-value path, not MADI → ROA); `.led-row` received a pointer cursor.
 
 ## Deployment
 
