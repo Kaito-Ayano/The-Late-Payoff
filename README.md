@@ -14,7 +14,7 @@ The public artifact is a single self-contained HTML file: 1280×720 stage, font 
 ## What the page says
 
 - 32 firms: 27 A-share and 5 HK; 309 firm-years in the 32×10 frame; 229 A-share firm-years with a constructible DICI; 7 MADI observations.
-- HK is a separate strip: 39 firm-years over 2017–2025 (JD and ANE from 2018, J&T from 2020; six gaps; no 2016 row); no DICI is released for any HK firm.
+- HK is a separate strip: 39 firm-years out of 50 HK cells (11 missing, all before 2020 — the thesis records full 32-firm coverage for 2020–2024); no DICI is released for any HK firm. The thesis does not itemise HK entry years, and the released figure-coverage map (44 points) is inconsistent with the 39 total, so the page states only the total and the missingness pattern, not a year-by-year decomposition.
 - Ten claim rows, seven accounts. The payoff is late, not absent.
 - H5 is the exploratory service-value path DICI → AIRI_S → service outcomes → ROA. H6 is MADI × DICI (N=7, not testable). H6b is AIRI_G × DICI.
 - Five robustness checks were pre-registered (winsorisation, DV replacement, excluding 2016, subsamples, stock-vs-flow DICI); their coefficients sit in the estimation logs and are not reprinted on the page.
@@ -37,7 +37,7 @@ The v4.4 page was audited at 1280×720 on 25 November 2026: 13/13 routes, 0 JS e
 
 Interaction audit: 41/41 declared Evidence rows open with non-empty content — Q1–Q8 (8), Claims Ledger H1a–H9 plus H6b (10), Conventions (9), Replication (7), Explore (7). Each Q1–Q8 has its own READING and Source line; H6b keeps its dedicated six-value p-ladder drawer. No page has duplicate answers. Q1–Q8 `data-r`/`data-src` are preserved from commit `3fbc100`; Q5 cluster range is restored to .038–.043; the H2 ledger answer is restored to the user baseline +.0843 with the Python +.0841 check; the H8 ledger reading changes only 27→32; the original H6b dedicated drawer structure is retained.
 
-v4.2–v4.4 corrections: Story 06 H8 denominator corrected from 27 to 32 firms; the H2 drawer no longer applies the 234× factor to +.0841 (that factor belongs to the thesis 32-firm extension +.0009); Controls drawer CFO denominator corrected to net operating cash flow / total assets; H6b stage3 +4.9785 labelled as a cross-check rather than "legacy must not be used"; Q/ledger active state follows the clicked row; inline favicon removes the `/favicon.ico` 404; Story 04 adds the SF-pilot boundary card; HK coverage text corrected back to 2017–2025 (J&T enters 2020; no 2016 row); Q5 cluster range restored to .038–.043 after the remote .035–.043 edit.
+v4.2–v4.4 corrections: Story 06 H8 denominator corrected from 27 to 32 firms; the H2 drawer no longer applies the 234× factor to +.0841 (that factor belongs to the thesis 32-firm extension +.0009); Controls drawer CFO denominator corrected to net operating cash flow / total assets; H6b stage3 +4.9785 labelled as a cross-check rather than "legacy must not be used"; Q/ledger active state follows the clicked row; inline favicon removes the `/favicon.ico` 404; Story 04 adds the SF-pilot boundary card; HK coverage text states only the verifiable facts (39 firm-years; 11 of 50 cells missing, all before 2020) because no year-by-year decomposition reproduces 39: the released figure map gives 44, and the 2017–2025 reading gives 40. Q5/ledger cluster range is .035–.043 per thesis §4.2 (the R vcovCL run returns .0346, below the Python range .0376–.0431).
 
 ## Deployment
 
